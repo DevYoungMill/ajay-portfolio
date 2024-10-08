@@ -1,5 +1,4 @@
 // Scroll Section Active Link
-
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -62,3 +61,9 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+// Current Year
+const yearEl = document.querySelector(".year");
+
+const date = new Date();
+yearEl.textContent = date.getFullYear();
